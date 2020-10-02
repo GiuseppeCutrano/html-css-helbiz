@@ -5,6 +5,7 @@ html{
 
 .debug .container{
   border: 1px solid black;
+
 }
 
 .debug .container [class*="col-"]{
@@ -20,9 +21,24 @@ html{
 
 .top_header img{
   width: 80px;
+  vertical-align: middle;
+}
+
+.h_bg{
+  height: 500px;
+}
+
+.hero-bg{
+background-image: url(../img/hero-bg.jpg);
+
 }
 
 
+[class*="nav_"] li:not(:last-child){
+
+  margin-right: 10px;
+
+}
 
 [class*="nav_"] li{
 display: inline-block;
@@ -32,9 +48,27 @@ text-align: right;
 
 .nav_left, .nav_right{
   float:right;
+
 }
 
 [class*="nav_"] li a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
+
+}
+
+
+.ghost_align::before{
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+ .text_center{
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-size: 20px;
+}
