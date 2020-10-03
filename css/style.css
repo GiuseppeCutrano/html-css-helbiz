@@ -6,12 +6,16 @@ html{
 .debug .container{
   border: 1px solid black;
 
+
 }
 
 .debug .container [class*="col-"]{
   border: 1px solid black;
 }
 
+.top_header{
+  margin-top:20px;
+}
 
 
 .top_header .container [class*="col-"]{
@@ -24,19 +28,9 @@ html{
   vertical-align: middle;
 }
 
-.h_bg{
-  height: 500px;
-}
-
-.hero-bg{
-background-image: url(../img/hero-bg.jpg);
-
-}
-
-
 [class*="nav_"] li:not(:last-child){
 
-  margin-right: 10px;
+  margin-right: 1rem;
 
 }
 
@@ -49,6 +43,11 @@ text-align: right;
 .nav_left, .nav_right{
   float:right;
 
+}
+
+.nav_right li:not(:first-child) a{
+border-left: 1px solid grey;
+padding-left: 10px;
 }
 
 [class*="nav_"] li a {
@@ -66,10 +65,63 @@ text-align: right;
   vertical-align: middle;
 
 }
- .text_center{
-  text-align: center;
-  margin: auto;
-  color: white;
-  font-size: 20px;
 
+
+/* box hero */
+
+
+
+.box-hero{
+  height: 550px;
+  max-width: 100%;
+  background-image: url(../img/hero-bg.jpg);
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  margin-top: 20px;
 }
+
+.text-hero{
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-hero > h1{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.text-hero > span{
+  font-size: 0.8rem;
+  margin: 20px;
+  display: block;
+}
+
+.text-hero img{
+  height: 35px;
+}
+
+.fa-bars {
+  color: black;
+  float: right;
+  margin-top: 5px;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 450px) and (max-width: 1024px) {
+     html{
+       font-size: 15px;
+     }
+
+     .fa{
+       margin-right: 80px;
+
+     }
+
+     
+
+  }
