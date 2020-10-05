@@ -21,7 +21,7 @@ html{
 
 .top_header .container [class*="col-"]{
   height: 80px;
-  ;
+
 }
 
 
@@ -69,6 +69,14 @@ padding-left: 10px;
 
 }
 
+#top_header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+}
+
 
 /* box hero */
 
@@ -81,7 +89,7 @@ padding-left: 10px;
   background-position: center;
   position: relative;
   background-repeat: no-repeat;
-  margin-top: 20px;
+
 }
 
 .text-hero{
@@ -94,7 +102,7 @@ padding-left: 10px;
 }
 
 .text-hero > h1{
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -133,7 +141,7 @@ padding-left: 10px;
   margin: 15px;
 }
 .box-monop> h2{
-  font-size: 2em;
+  font-size: 2rem;
   padding-top: 50px;
   margin-bottom: 30px;
 }
@@ -145,7 +153,7 @@ padding-left: 10px;
 /* media screen */
 @media screen and  (min-width: 768px) {
      body{
-       font-size: 13px;
+       font-size: 1rem;
      }
 
      .fa{
@@ -155,7 +163,7 @@ padding-left: 10px;
      }
 
      .text-hero {
-       font-size: 2.5em;
+       font-size: 2rem;
 
      }
 
